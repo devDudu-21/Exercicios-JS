@@ -10,17 +10,19 @@ if (!confirma) {
 }
 if (novaVelocidade < 0) {
     alert(`Nave está parada. Considere partir e aumentar a velocidade.`)
-}
-if (novaVelocidade < 40) {
-    alert(`Parece uma boa velocidade para manter.`)
-}
-if (novaVelocidade >= 80 && novaVelocidade < 100) {
-    alert(`Velocidade alta, considere diminuir.`)
-}
-if (novaVelocidade >= 100) {
-    alert(`Velocidade perigosa. Controle automático forçado.`)
+} else {
+    if (novaVelocidade < 40) {
+        alert(`Parece uma boa velocidade para manter.`)
+    }
+    if (novaVelocidade >= 80 && novaVelocidade < 100) {
+        alert(`Velocidade alta, considere diminuir.`)
+    }
+    if (novaVelocidade >= 100) {
+        alert(`Velocidade perigosa. Controle automático forçado.`)
+    }
 }
 alert(`
 Nome do piloto: ${nome}
 Velocidade atual: ${novaVelocidade}
 `)
+
